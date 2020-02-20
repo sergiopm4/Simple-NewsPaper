@@ -1,0 +1,23 @@
+#head-title  {
+    font-family: 'Lacquer', sans-serif;
+    font-size: 50px;
+}
+#head-title > a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#nav-links > a {
+    font-family: 'Lacquer', sans-serif;
+    font-size: 20px;
+
+}
+
+#selectCountry, .button {
+    font-family: 'Lacquer', sans-serif;
+
+}
+#optionsSelect {
+    font-family: 'Lacquer', sans-serif;
+
+}

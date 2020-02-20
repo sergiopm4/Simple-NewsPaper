@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="jumbotron">
+                <h1 class="display-4">{{_data.newsDataApi[index].title}}</h1>
+                <p>{{_data.newsDataApi[index].description}}</p>
+
+                <hr class="my-4">
+                <p>{{_data.newsDataApi[index].content}}</p>
+
+                <p class="lead"><strong><a href="{{_data.newsDataApi[index].url}}" target="_blank">Read full new
+                            here!</a></strong></p>
+                <p class="lead">Source: {{_data.newsDataApi[index].source.name}}</p>
+                <a class="btn btn-warning btn-lg" routerLink="/titulares" role="button">Back to news</a>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

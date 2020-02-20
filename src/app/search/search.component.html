@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of _data.newsDataFilterApi;let i = index">
+            <div class="card">
+                <img src="{{item.urlToImage}}" height="175" alt="">
+                <div class="card-body">
+                    <h5>{{item.title}}</h5>
+                    <p class="lead">{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
