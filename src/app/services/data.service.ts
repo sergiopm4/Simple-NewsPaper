@@ -52,7 +52,7 @@ export class DataService {
   //Funcion que filtra por pais en el EndPoint. De esta forma hace una nueva llamada
   //a la API y refresca newsDataApi con los nuevos datos del pais.
   filterCountry() {
-    this._http.get(`http://newsapi.org/v2/top-headlines?country=${this.selectedCountry}&category=business&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3`)
+    this._http.get(`https://newsapi.org/v2/top-headlines?country=${this.selectedCountry}&category=business&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3`)
       .subscribe((responseApi) => {
         this.newsDataApi = responseApi["articles"]
       })
@@ -61,7 +61,7 @@ export class DataService {
 
   //Filtro de categoria.
   filterCategory(category: string) {
-    this._http.get(`http://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3`)
+    this._http.get(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3`)
       .subscribe((responseApi) => {
         this.newsDataApi = responseApi["articles"]
       })
@@ -91,7 +91,7 @@ export class DataService {
 
   //llamada GET a la API.
   constructor(public _http: HttpClient) {
-    _http.get("http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3")
+    _http.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4d508d1d70cf4bfb82e883f4e5621ce3")
       .subscribe((responseApi) => {
         // console.log(responseApi);
         this.newsDataApi = responseApi["articles"]
